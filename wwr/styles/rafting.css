@@ -45,13 +45,9 @@ nav, p, section, article{
   width: 100%;
   height: auto;
 }
-.hero h1{
-  position: absolute;
-}
-.hero article{
-  position: absolute;
-}
+
 h1{
+  position: absolute;
   top: 10%;
   width: 100%;
   padding: 16px;
@@ -69,11 +65,12 @@ h2{
   color: white;
 }
 article{
+  position: absolute;
   top: 75%;
   background-color: var(--accent2-color);
   opacity: 0.6;
 }
-article img{
+.hero article img{
   float: right;
   width: 125px;
 }
