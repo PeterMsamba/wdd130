@@ -3,8 +3,8 @@
   --secondary-color: white;
   --accent1-color: rgb(106, 106, 248);
   --accent2-color: rgb(255, 255, 3);
-  --heading-font: "Times New Roman", "Arial", serif;
-  --body-font: Arial;
+  --heading-font: "Arial", serif;
+  --body-font: Arial, serif;
 }
 *{
   margin: 0;
@@ -34,7 +34,7 @@ nav, p, section, article{
   margin: 16px;
   padding: 8px;
 }
-.socialmedia{
+.socialmedia a{
   text-decoration: none;
 }
 .hero{
@@ -45,8 +45,13 @@ nav, p, section, article{
   width: 100%;
   height: auto;
 }
-h1{
+.hero h1{
   position: absolute;
+}
+.hero article{
+  position: absolute;
+}
+h1{
   top: 10%;
   width: 100%;
   padding: 16px;
@@ -64,12 +69,11 @@ h2{
   color: white;
 }
 article{
-  position: absolute;
   top: 75%;
   background-color: var(--accent2-color);
   opacity: 0.6;
 }
-.hero article img{
+article img{
   float: right;
   width: 125px;
 }
