@@ -46,7 +46,7 @@ nav, p, section, article{
   height: auto;
 }
 
-h1{
+.hero h1{
   position: absolute;
   top: 10%;
   width: 100%;
@@ -64,7 +64,7 @@ h2{
   background-color: var(--accent1-color);
   color: white;
 }
-article{
+.hero article{
   position: absolute;
   top: 75%;
   background-color: var(--accent2-color);
