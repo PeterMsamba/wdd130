@@ -3,8 +3,8 @@
   --secondary-color:red;
   --accent1-color:d black;
   --accent2-color: yellow;
-  --heading-font: "Times New Roman", "Georgia", serif;
-  --body-font: Arial, Helvetica, sans-serif;
+  --heading-font: "Times New Roman", "Arial", serif;
+  --body-font: Arial;
 }
 *{
   margin: 0;
@@ -54,7 +54,7 @@ h1{
 article{
   position: absolute;
 }
-article img{
+.hero article img{
   float: right;
   height: 125px;
 }
