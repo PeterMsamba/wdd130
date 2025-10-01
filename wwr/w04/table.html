@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    table {
+      border: 2px solid rgb(140, 140, 140);
+      font: 16px "open sans" arial;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid rgb(160, 160, 160);
+      padding: 4px 6px;
+    }
+
+    th {
+      vertical-align: bottom;
+    }
+
+    thead {
+      background-color: rgb(228, 240, 245);
+    }
+
+    thead>tr:nth-of-type(2) {
+      border-bottom: 2px solid rgb(140, 140, 140);
+    }
+
+    thead>tr:last-of-type>th:nth-of-type(1) {
+      background-color: rgb(225 225 225);
+    }
+
+    thead>tr:last-of-type>th:nth-of-type(2) {
+      background-color: rgb(255 225 225);
+    }
+
+    tbody>tr>th:first-of-type {
+      text-align: left;
+      background-color: rgb(225 229 244);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tbody>tr>td:last-of-type {
+      text-align: right;
+    }
+
+    thead>tr,
+    tfoot>tr {
+      background-color: rgb(228, 240, 245);
+    }
+
+    tfoot>tr {
+      border-top: 2px dashed rgb(140 140 140);
+      background-color: rgb(228 240 245);
+    }
+
+    tfoot th,
+    tfoot td {
+      text-align: right;
+      font-weight: bold;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <caption>Membership Details</caption>
+    <thead>
+      <tr>
+        <th scope="col" rowspan="2">Name</th>
+        <th scope="col" rowspan="2">ID</th>
+        <th scope="col" colspan="2">Membership Date</th>
+        <th scope="col" colspan="2">Balance</th>
+      </tr>
+      <tr>
+        <th scope="col">Joined</th>
+        <th scope="col">Conceled</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Peter Msamba</td>
+        <td>001</td>
+        <td>2010</td>
+        <td>n/a</td>
+        <td>$5000</td>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>002</td>
+        <td>2012</td>
+        <td>n/a</td>
+        <td>$3000</td>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row" colspan="4">Total balance</th>
+        <td>53.00</td>
+      </tr>
+    </tfoot>
+  </table>
+
+
+</body>
+
+</html>
