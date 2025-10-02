@@ -92,6 +92,53 @@ h2{
   background-color: var(--accent2-color);
   opacity: 0.6;
 }
+/*star Contant form styles*/
+header{
+  border: 1px solid gray;
+}
+.white-heading, h1{
+  margin-top: 10px;
+}
+.top-content-div{
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+}
+p{
+  margin: 1px;
+  padding: 0;
+  font-weight: bold
+}
+.form-section{
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 15px;
+  margin-top: 10px;
+}
+label{
+  color: black;
+}
+.form-items{
+  margin: 10px;
+}
+.name, .email{
+  margin-left: 110px;
+  padding: 8px;
+  font-family: arial;
+}
+textarea{
+  display: block;
+  padding: 10px;
+  width: 350px;
+}
+.grid-list{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+button{
+  padding: 8px 140px;
+}
+/*end Contant form styles*/
 .adventure {
   display: flex;
   flex-direction: row;
