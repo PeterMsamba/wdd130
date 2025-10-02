@@ -95,6 +95,7 @@ h2{
 /*star Contant form styles*/
 header{
   border: 1px solid gray;
+  box-shadow: 1px 1px 30px gray;
 }
 .white-heading, h1{
   margin-top: 10px;
@@ -104,10 +105,19 @@ header{
   justify-content: center; /* Centers horizontally */
   align-items: center;
 }
+/*Map style*/
+.map{
+  width: 300px;
+  height: 310px
+}
+
 p{
   margin: 1px;
   padding: 0;
   font-weight: bold
+}
+.form-messsage{
+  font-weight: 500;
 }
 .form-section{
   display: grid;
