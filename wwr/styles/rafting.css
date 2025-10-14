@@ -3,6 +3,7 @@
   --secondary-color: #FFFFFF;
   --accent1-color: #2323E4;
   --accent2-color: rgb(255, 255, 3);
+  --accent3-color: rgba(241, 179, 7, 0.938);
   --heading-font: "Arial", serif;
   --body-font: Arial, serif;
 }
@@ -15,17 +16,22 @@ body{
   font-family: var(--body-font);
   color: var(--accent1-color);
 }
-.grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+
 .flex{
   display: flex;
-  list-style: none;
 }
 .flex li{
   flex: 1 1 auto;
+  margin: 7px;
+  list-style: none;
 }
+a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
 p{
   color: black;
   font-weight: 500;
@@ -45,6 +51,91 @@ nav, p, section, article{
   margin: 16px;
   padding: 8px;
 }
+/*Home page form*/
+.home-form-section{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--accent3-color);
+}
+h3{
+  color: black;
+  font-size: 30px;
+}
+.home-form-section div{
+  margin: 10px;
+}
+.home-form-section input{
+  padding: 8px;
+  font-family: arial;
+  border-radius: 5px;
+}
+.home-form-section label{
+  font-family: arial;
+  font-weight: bold;
+}
+
+.subscribe{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+/*end of the Home page form*/
+
+/*Additional content on home page*/
+.home-add-cont-grid{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+.picture-card h3{
+  text-align: center;
+  color: var(--primary-color);;
+  font-size: 16px;
+  padding: 5px;
+}
+.picture-card p{
+  font-size: 14px;
+  padding: 5px;
+  color: black;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.picture-card button{
+  background-color: var(--accent1-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 8px 50px;
+  margin: 5px 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.picture-card{
+  width: 252px;
+  border: 1px solid gray;
+  margin: 5px;
+  box-shadow: 1px 1px 30px gray;
+}
+.picture-card img{
+  width: 250px;
+}
+/* End of Additional content on home page*/
+
+/*Ad section*/
+.ad-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+/*end of ad section*/
 .section-grid img{
   width: 200px;
 }
@@ -167,10 +258,79 @@ button{
   float: right;
   width: 125px;
 }
+/*Trips page*/
+.ad-box{
+  background-color: rgb(226, 223, 223);
+}
+.first-div{
+  padding: 60px;
+  background-color: rgba(241, 179, 7, 0.938);
+}
+.first-div,
+.sec-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ready-to-go-para{
+  background-color: #006d77;;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+.ready-to-go-para p,
+.ready-to-go-para a{
+  color: white;
+  font-size: 20px;
+}
+.ready-to-go-para a{
+  text-decoration: underline;
+  font-weight: bold;
+}
+/*Table styles*/
+.table-div{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+.table-div caption{
+  caption-side: top;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+table{
+  border: 1px solid gray;
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td{
+  border: 1px solid gray;
+  padding: 8px;
+  text-align: left;
+}
+th{
+  background-color: #006d77;
+  color: white;
+}
+tr:nth-child(even){
+  background-color: #e4e3e3;
+}
+tr:hover{
+  background-color: #ddd;
+}
+td{
+  color: black;
+  font-weight: 500;
+}
+/*end of Trips page*/
 footer{
   border-top: 1px solid rgb(206, 205, 205);
 }
-.footer-grid{
-  display: grid;
-  grid-template-columns: 1fr 350px;
+.footer-grid,
+.header-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
