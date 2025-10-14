@@ -275,6 +275,7 @@ button{
   background-color: var(--accent4-color);
   color: white;
   font-weight: bold;
+  font-size: 17px;
   border: none;
   padding: 8px 50px;
   margin: 5px 35px;
@@ -288,7 +289,7 @@ button{
   align-items: center;
 }
 .ready-to-go-para{
-  background-color: #006d77;;
+  background-color: #033236;;
   padding: 20px;
   text-align: center;
   margin-top: 40px;
@@ -325,7 +326,7 @@ th, td{
   text-align: left;
 }
 th{
-  background-color: #006d77;
+  background-color: #033236;
   color: white;
 }
 tr:nth-child(even){
