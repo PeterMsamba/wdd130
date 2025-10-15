@@ -273,7 +273,6 @@ button{
 }
 .first-div button{
   background-color: var(--accent4-color);
-  color: white;
   font-weight: bold;
   font-size: 17px;
   border: none;
@@ -281,6 +280,9 @@ button{
   margin: 5px 35px;
   border-radius: 5px;
   cursor: pointer;
+}
+.first-div button a{
+  color: white;
 }
 .first-div,
 .sec-div{
